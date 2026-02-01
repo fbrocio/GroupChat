@@ -168,8 +168,7 @@ public class GroupChat extends JPanel implements MessageObserver {
         }
 
         if (controller != null) {
-        	String alias = controller.getUsuarioAlias();
-            controller.sendMessage(text, alias);
+            controller.sendMessage(text);
         }
 
         inputArea.setText("");

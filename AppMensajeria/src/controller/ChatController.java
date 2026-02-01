@@ -66,7 +66,7 @@ public class ChatController {
     /**
      * Envía un mensaje al servidor
      */
-    public void sendMessage(String mensaje, String aliasUsuario) {
+    public void sendMessage(String mensaje) {
         if (cliente != null) {
             try {                
             	cliente.enviarMensaje(mensaje);
